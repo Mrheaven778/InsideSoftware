@@ -11,7 +11,7 @@ function Hader() {
   }, []);
 
   return (
-    <header className="flex flex-col gap-7 md:flex-row justify-around md:gap-2 items-center bg-slate-600 p-4 rounded-xl">
+    <header className="flex flex-col gap-7 md:flex-row justify-around md:gap-2 items-center bg-slate-800 p-4 rounded-xl">
       <div className="flex flex-row items-center">
         <img
           src="/logo.png"

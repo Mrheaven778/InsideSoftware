@@ -1,0 +1,35 @@
+---
+import CardTabajadores from "./CardTabajadores.astro";
+---
+
+<section id="nosotros" class="bg-200">
+  <div class="container mx-auto mt-24">
+    <div class="flex flex-col items-center justify-center mb-2 gap-2">
+      <h1 class="text-meteor-400 font-mono md:text-4xl font-bold text-2xl">
+        Nosotros
+      </h1>
+      <hr class="border-meteor-400 w-1/12 border-2" />
+
+      <p class="text-xl text-meteor-100">Descubre más sobre nosotros</p>
+    </div>
+    
+    <CardTabajadores
+      nombre="German Palomares Gomez"
+      direccion="Avenida desengaño n15, primero B"
+      edad="29 años"
+      dni="20396045J"
+      telefono="+34 555-4214"
+      estadoCivil="Casado"
+      img="/empleado1.jpg"
+    />
+        <CardTabajadores
+      nombre="Zacarias Atrusteri Blanco"
+      direccion="Calle ave del paraiso n10, atico B"
+      edad="23 años"
+      dni="20347023L"
+      telefono="+34 555-0911"
+      estadoCivil="Soltero"
+      img="/Empleado2.png"
+    />
+  </div>
+</section>

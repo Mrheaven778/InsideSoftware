@@ -1,0 +1,48 @@
+---
+interface Props {
+  nombre: string;
+  edad: string;
+  dni: string;
+  direccion: string;
+  telefono: string;
+  estadoCivil: string;
+  img: string;
+}
+const { nombre, edad, dni, direccion, telefono, estadoCivil, img } =
+  Astro.props;
+---
+
+<div
+  class="flex flex-col md:flex-row items-center justify-center md:gap-4 mt-4 bg-slate-800 p-5 rounded-lg border-gray-300 border first-letter:"
+>
+  <div class="text-center mb-8">
+    <div class="flex flex-col items-start justify-center">
+      <p class="text-meteor-100 mt-4">
+        <span class="font-bold text-meteor-300"> Nombre y apellidos:</span>
+        {nombre}
+      </p>
+      <p>
+        <span class="font-bold text-meteor-300"> Edad:</span>
+        {edad}
+      </p>
+      <p><span class="font-bold text-meteor-300"> DNI:</span> {dni}</p>
+      <p>
+        <span class="font-bold text-meteor-300"> Domicilio Particular:</span>
+        {direccion}
+      </p>
+      <p>
+        <span class="font-bold text-meteor-300">Telefono:</span>
+        {telefono}
+      </p>
+      <p>
+        <span class="font-bold text-meteor-300"> Estado civil:</span>
+        {estadoCivil}
+      </p>
+    </div>
+  </div>
+  <img
+    src=`${img}`
+    alt="foto de la empresa"
+    class="md:w-2/6 w-6/12 rounded-lg shadow-lg"
+  />
+</div>
